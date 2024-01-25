@@ -41,7 +41,7 @@ var z4=Object.defineProperty,j4=Object.defineProperties;var W4=Object.getOwnProp
  Adicionalmente, estima-se que outros R$ 70 milh\xF5es seriam necess\xE1rios para a recupera\xE7\xE3o ideal das edifica\xE7\xF5es do MAM (comparados com os projetos recentes de expans\xE3o da Pinacoteca, na ordem de R$ 80 milh\xF5es, conclu\xEDdos no ano de 2023, e o projeto de expans\xE3o e renova\xE7\xE3o do MASP, na ordem de R$ 140 milh\xF5es, em andamento). \r
 \r
 \r
- <br><br> <iframe title='Estimativa dos custos operacionais do MAM Rio' aria-label='Gr\xE1fico de colunas empilhadas' id='datawrapper-chart-Hyty1' src='https://datawrapper.dwcdn.net/Hyty1/1/' scrolling='no' frameborder='0' style='border: none;' width='600'  data-external='1'></iframe> \r
+ <br><br> <iframe title='Estimativa dos custos operacionais do MAM Rio' aria-label='Gr\xE1fico de colunas empilhadas' id='datawrapper-chart-Hyty1' src='https://datawrapper.dwcdn.net/Hyty1/1/' scrolling='no' frameborder='0' style='border: none;' width='600' height='300'  data-external='1'></iframe> \r
 \r
 \r
  <br><br> <iframe title='Compara\xE7\xE3o de custos operacionais anuais entre o MAM Rio e outros museus' aria-label='Range Plot' id='datawrapper-chart-HuumG' src='https://datawrapper.dwcdn.net/HuumG/1/' scrolling='no' frameborder='0' style='width: 0; min-width: 100% !important; border: none;' height='210' data-external='1'></iframe> \r
