@@ -88,9 +88,9 @@
         <div class="intro-block">
           <p class="intro-text">{copy.description}</p>
           <p class="intro-text">{copy.description_continuation}</p>
-          <p class="byline sm">
+          <!-- <p class="byline sm">
             Desenvolvido por &nbsp&nbsp<a href="https://www.dados.rio"  target="_blank">Escritório de Dados da Prefeitura do Rio de Janeiro </a> 
-          </p>
+          </p> -->
         </div>
       </div>
     {:else}
@@ -101,9 +101,9 @@
           <div class="intro-block">
             <p class="intro-text" style="max-width: {introBlockW}px">{copy.description}</p>
             <p class="intro-text">{copy.description_continuation}</p> 
-            <p class="mb-1 byline sm">
+            <!-- <p class="mb-1 byline sm">
               Desenvolvido por <span><br></span><a href="https://www.dados.rio"  target="_blank">Escritório de Dados da Prefeitura do Rio de Janeiro </a> 
-            </p>
+            </p> -->
             
           </div>
         </div>

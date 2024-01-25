@@ -21,28 +21,46 @@
   onMount(() => {
     photos = selectAll(".trip-wrapper .border-2");
   });
-
-  export let text;
+  import { CompareImage } from "svelte-compare-image";
+  
 </script>
 
 <div class="trip-wrapper" use:inView on:enter={() => showPhotos()}>
   <div class="relative z-0 flex flex-col justify-between w-full max-w-5xl mx-auto my-0">
     <div class="border-2 border-black" id="madera-triptych">
-      <ImageCompare before="assets/img/f02_antes.jpg" after="assets/img/f02_reduzida_r01.jpg"
-      ></ImageCompare>
-      <!-- <p>texto 1 aqui</p> -->
+      <CompareImage
+      imageLeftSrc="assets/img/f02_antes.jpg"
+      imageLeftAlt="left"
+      imageRightSrc="assets/img/f02_reduzida_r01.jpg"
+      imageRightAlt="right"
+      --handle-size="2.5rem"
+      --slider-color="#ffffff"
+      --slider-width="0.125rem"
+    />
     </div>
 
     <div class="border-2 border-black" id="gardena1-triptych">
-      <ImageCompare before="assets/img/f03_antes.jpg" after="assets/img/f03_reduzida_r01.jpg"
-      ></ImageCompare>
-      <!-- <p>texto 2 aqui</p> -->
+      <CompareImage
+      imageLeftSrc="assets/img/f03_antes.jpg"
+      imageLeftAlt="left"
+      imageRightSrc="assets/img/f03_reduzida_r01.jpg"
+      imageRightAlt="right"
+      --handle-size="2.5rem"
+      --slider-color="#ffffff"
+      --slider-width="0.125rem"
+    />
     </div>
 
     <div class="border-2 border-black" id="gardena2-triptych">
-      <ImageCompare before="assets/img/f04_antes.jpg" after="assets/img/f04_reduzida_r01.jpg"
-      ></ImageCompare>
-      <!-- <p>texto 3 aqui</p> -->
+      <CompareImage
+      imageLeftSrc="assets/img/f04_antes.jpg"
+      imageLeftAlt="left"
+      imageRightSrc="assets/img/f04_reduzida_r01.jpg"
+      imageRightAlt="right"
+      --handle-size="2.5rem"
+      --slider-color="#ffffff"
+      --slider-width="0.125rem"
+    />
     </div>
   </div>
 </div>

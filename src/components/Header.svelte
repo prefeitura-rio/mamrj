@@ -3,7 +3,7 @@
   import logoPretoHorizontal from '$svg/logo_preto_horizontal.png'; 
 </script>
 
-<header>
+<!-- <header>
   <div class="headerWrapper">
   <div class="wordmark">
     <a href="https://dados.rio/" target="_blank" aria-label="The Pudding">
@@ -11,13 +11,13 @@
     </a>
   </div>
 
-  <!-- <div class="topLeftImage">
+  <div class="topLeftImage">
     <a href="https://prefeitura.rio/" aria-label="The Pudding">
       <img src={logoPretoHorizontal} alt="Logo Prefeitura" />
     </a>
-  </div> -->
   </div>
-</header>
+  </div>
+</header> -->
 
 <style>
   .headerWrapper {
