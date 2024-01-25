@@ -1,0 +1,115 @@
+@import "variables.css";
+/* \@tailwind base acts as a reset/normalize */
+/* \@import "normalize.css"; */
+@import "font.css";
+@import "reset.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ensure some elements have base styles like anchor tags */
+@layer base {
+	a {
+		@apply text-teal-700 underline hover:text-teal-800;
+	}
+}
+
+/* colors defined in variables.css */
+:root {
+	/* font */
+	--sans: "National 2 Web", Helvetica, Arial, sans-serif;
+	--serif: "Tiempos Text Web", Georgia, Times, serif;
+	--dubois: "DuBois Regular", Menlo, Consolas, Monaco, "Courier New", monospace;
+	--dubois-wide: "DuBois Wide", Menlo, Consolas, Monaco, "Courier New", monospace;
+	--mono: Menlo, Consolas, Monaco, "Courier New", monospace;
+
+	/* z-index */
+	--z-bottom: -100;
+	--z-middle: 0;
+	--z-top: 100;
+	--z-overlay: 1000;
+
+	/* presets */
+	--border-radius: 4px;
+	--font-body: var(--serif);
+	--font-form: var(--sans);
+	--color-bg: #e7e7e7;
+	--color-fg: var(--color-gray-900);
+	--color-placeholder: var(--color-gray-500);
+	--color-link: var(--color-purple);
+	--color-focus: var(--color-red);
+	--color-form-bg: var(--color-gray-300);
+	--color-form-fg: var(--color-gray-900);
+	--color-border: var(--color-gray-300);
+	--color-selection: var(--color-gray-300);
+	--color-highlight: var(--color-yellow);
+	--color-off-black: var(--color-gray-900);
+
+	/* presets */
+	--color-db-red: black;
+	--color-db-pink: #E89994;
+	--color-db-tan: #BF9F88;
+	--color-db-light-tan: #DECBBA;
+	--color-db-brown: #8F6952;
+	--color-db-blue: #5367A2;
+	--color-db-yellow: #EFAE38;
+	--color-db-green: #82A884;
+	--color-db-bg-tan: #e7e7e7;
+
+	--color-hero: #82A884;
+}
+
+.bg-custom {
+	background-color: #e7e7e7;
+}
+
+.text-label {
+	font-family: var(--sans);
+}
+
+.text-shadow {
+  text-shadow: -1px -1px 2px #e7e7e7, 1px -1px 2px #e7e7e7, -1px 1px 2px #e7e7e7, 1px 1px 2px #e7e7e7;
+}
+
+h2 {
+	font-family: var(--dubois-wide);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* Colors style for radial chart */
+.share_black2010 span,
+.share_black_stayed span,
+.medhhinc_1990 span,
+.medhhinc_2016 span {
+	font-weight: bold;
+	font-family: var(--dubois);
+	text-transform: uppercase;
+}
+
+.share_black2010 span::before, .share_black_stayed span::before, .medhhinc_1990 span::before, .medhhinc_2016 span::before {
+	display: inline-block;
+	width:1rem;
+	height:1rem;
+	border-radius: 50%;
+	content: '';
+	border: 1px solid var(--color-off-black);
+	position: relative;
+	margin: 0 0.25rem;
+	top: 0.15rem;
+}
+
+.medhhinc_1990 span::before {
+	background-color: var(--color-db-pink);
+}
+.medhhinc_2016 span::before {
+	background-color: var(--color-db-yellow);
+}
+
+.share_black_stayed span::before {
+	background-color: var(--color-db-green);
+}
+.share_black2010 span::before {
+	background-color: var(--color-db-blue);
+}
