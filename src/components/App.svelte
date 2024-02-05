@@ -170,6 +170,7 @@
     <div class="text-wrapper">
       {#each copy.solucao as props, i}
       {#if props.block === 'antes-depois'}
+      <br><br><br><br><br>
       <div class="relative z-0 flex flex-col justify-between w-full max-w-5xl mx-auto my-0">
         <div class="border-2 border-black" id="madera-triptych">
           <CompareImage
@@ -183,6 +184,7 @@
         />
         </div>
         </div>
+        <br><br><br>
     {:else}
       <svelte:component
         this={blocks[props.block] ?? Text}
