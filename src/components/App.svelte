@@ -175,8 +175,16 @@
     {/if}
   </section>
   <div class="iframe-container">
-    <iframe class="border-2 border-black" width="900" height="500" src="https://www.youtube.com/embed/vmqZFQy_lhg?si=4rjb380bBc_HiGv5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+    <iframe
+    class="border-2 border-black"
+    src="https://res.cloudinary.com/doueg88fj/video/upload/v1707151194/wbhlm5wxdgs6scug1dxn.mp4"
+    width="900"
+    height="500" 
+    allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+    allowfullscreen
+    frameborder="0"
+  ></iframe>
+  </div>
 
   <section style="margin-top:-20px" class="intro-section" bind:clientHeight={introH}>
     <div class="text-wrapper">
