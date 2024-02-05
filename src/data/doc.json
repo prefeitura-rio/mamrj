@@ -35,8 +35,8 @@
       "text": "O projeto de revitalização do MAM Rio e seu entorno surge pela necessidade de encontrar novas vocações turísticas e culturais para uma das mais icônicas áreas da cidade. Por meio de ações de restauração, urbanização e paisagismo, o MAM Rio e seu entorno voltarão a fazer parte da paisagem carioca e do calendário de eventos do Rio, do Brasil e do mundo. "
     },
     {
-      "block": "text",
-      "text": "<div class='border-2 border-black ' style=' margin-top:5rem;display: block;margin-left: -17rem;margin-right: auto;width: 200%;'><img src='assets/img/01_GERAL_r01.jpg'/></div> "
+      "block": "antes-depois",
+      "text": "antes-depois "
     },
     {
       "block": "text",

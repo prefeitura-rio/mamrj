@@ -18,6 +18,7 @@
     import Deterioracao from "./Deterioracao.svelte";
     import Solucao from "./Solucao.svelte";
     import SolucaoPhoto from "./SolucaoPhoto.svelte";
+    import { CompareImage } from "svelte-compare-image";
 
   const blocks = {
     text: Text,
@@ -168,11 +169,28 @@
   <section style="margin-top:-20px" class="intro-section" bind:clientHeight={introH}>
     <div class="text-wrapper">
       {#each copy.solucao as props, i}
-        <svelte:component
-          this={blocks[props.block] ?? Text}
-          id={props.id ?? `graf-${i}`}
-          {...props}
+      {#if props.block === 'antes-depois'}
+      <div class="relative z-0 flex flex-col justify-between w-full max-w-5xl mx-auto my-0">
+        <div class="border-2 border-black" id="madera-triptych">
+          <CompareImage
+          imageLeftSrc="assets/img/01_GERAL_r01.jpg"
+          imageLeftAlt="left"
+          imageRightSrc="assets/img/01_GERAL_r02.jpg"
+          imageRightAlt="right"
+          --handle-size="2.5rem"
+          --slider-color="#ffffff"
+          --slider-width="0.125rem"
         />
+        </div>
+        </div>
+    {:else}
+      <svelte:component
+        this={blocks[props.block] ?? Text}
+        id={props.id ?? `graf-${i}`}
+        {...props}
+      />
+    {/if}
+        
       {/each}
     </div>
     {#if introH != undefined}
