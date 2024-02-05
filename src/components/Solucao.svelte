@@ -46,14 +46,14 @@
     }
   }
   function toggleFullScreen3() {
-    if (!document.fullscreenElement) {
-      divElement3.requestFullscreen().catch((err) => {
-        alert(`Erro ao ativar o modo de tela cheia: ${err.message}`);
-      });
-    } else {
-      document.exitFullscreen();
-    }
+  if (!document.fullscreenElement) {
+    divElement3.requestFullscreen().catch((err) => {
+      alert(`Erro ao ativar o modo de tela cheia: ${err.message}`);
+    });
+  } else {
+    document.exitFullscreen();
   }
+}
 </script>
 
 <div class="trip-wrapper" use:inView on:enter={() => showPhotos()}>
@@ -118,7 +118,6 @@
   .trip-wrapper {
     height: calc(100vw * 1.25);
     padding: 1rem 1rem 0rem 1rem;
-    /* max-width: 60rem; */
     max-height: 100rem;
     margin: 0 auto;
     display: flex;
@@ -155,13 +154,13 @@
 
   #gardena1-triptych {
     text-align: center;
-    top: 50%;
+    top: 45%;
     right: 0;
   }
 
   #gardena2-triptych {
     text-align: center;
-    top: 100%;
+    top: 90%;
     right: 0;
   }
 
