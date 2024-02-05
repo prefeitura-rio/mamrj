@@ -43,6 +43,18 @@
 
   export let introScrollValue;
   export let id;
+
+  let divElement;
+
+  function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+      divElement.requestFullscreen().catch(err => {
+        alert(`Erro ao ativar o modo de tela cheia: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  }
   
 </script>
 
@@ -171,19 +183,23 @@
       {#each copy.solucao as props, i}
       {#if props.block === 'antes-depois'}
       <br><br><br><br><br>
-      <div class="relative z-0 flex flex-col justify-between w-full max-w-5xl mx-auto my-0">
+      <div class="relative z-0 flex flex-col justify-between w-full max-w-5xl mx-auto my-0" bind:this={divElement}>
         <div class="border-2 border-black" id="madera-triptych">
           <CompareImage
-          imageLeftSrc="assets/img/01_GERAL_r01.jpg"
-          imageLeftAlt="left"
-          imageRightSrc="assets/img/01_GERAL_r02.jpg"
-          imageRightAlt="right"
-          --handle-size="2.5rem"
-          --slider-color="#ffffff"
-          --slider-width="0.125rem"
-        />
+            imageLeftSrc="assets/img/01_GERAL_r01.jpg"
+            imageLeftAlt="left"
+            imageRightSrc="assets/img/01_GERAL_r02.jpg"
+            imageRightAlt="right"
+            --handle-size="2.5rem"
+            --slider-color="#ffffff"
+            --slider-width="0.125rem"
+          />
         </div>
-        </div>
+      
+        <button class="absolute bottom-4 right-4 bg-blue-500 text-white p-2 rounded" on:click={toggleFullScreen}>
+          Full Screen
+        </button>
+      </div>
         <br><br><br>
     {:else}
       <svelte:component

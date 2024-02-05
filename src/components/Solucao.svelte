@@ -22,45 +22,94 @@
     photos = selectAll(".trip-wrapper .border-2");
   });
   import { CompareImage } from "svelte-compare-image";
-  
+
+  let divElement1;
+  let divElement2;
+  let divElement3;
+
+  function toggleFullScreen1() {
+    if (!document.fullscreenElement) {
+      divElement1.requestFullscreen().catch((err) => {
+        alert(`Erro ao ativar o modo de tela cheia: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  }
+  function toggleFullScreen2() {
+    if (!document.fullscreenElement) {
+      divElement2.requestFullscreen().catch((err) => {
+        alert(`Erro ao ativar o modo de tela cheia: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  }
+  function toggleFullScreen3() {
+    if (!document.fullscreenElement) {
+      divElement3.requestFullscreen().catch((err) => {
+        alert(`Erro ao ativar o modo de tela cheia: ${err.message}`);
+      });
+    } else {
+      document.exitFullscreen();
+    }
+  }
 </script>
 
 <div class="trip-wrapper" use:inView on:enter={() => showPhotos()}>
   <div class="relative z-0 flex flex-col justify-between w-full max-w-5xl mx-auto my-0">
-    <div class="border-2 border-black" id="madera-triptych">
+    <div class="border-2 border-black" id="madera-triptych" bind:this={divElement1}>
       <CompareImage
-      imageLeftSrc="assets/img/f02_antes.jpg"
-      imageLeftAlt="left"
-      imageRightSrc="assets/img/f02_reduzida_r01.jpg"
-      imageRightAlt="right"
-      --handle-size="2.5rem"
-      --slider-color="#ffffff"
-      --slider-width="0.125rem"
-    />
+        imageLeftSrc="assets/img/f02_antes.jpg"
+        imageLeftAlt="left"
+        imageRightSrc="assets/img/f02_reduzida_r01.jpg"
+        imageRightAlt="right"
+        --handle-size="2.5rem"
+        --slider-color="#ffffff"
+        --slider-width="0.125rem"
+      />
+      <button
+        class="absolute bottom-4 right-4 bg-blue-500 text-white p-2 rounded"
+        on:click={toggleFullScreen1}
+      >
+        Full Screen
+      </button>
     </div>
 
-    <div class="border-2 border-black" id="gardena1-triptych">
+    <div class="border-2 border-black" id="gardena1-triptych" bind:this={divElement2}>
       <CompareImage
-      imageLeftSrc="assets/img/f03_antes.jpg"
-      imageLeftAlt="left"
-      imageRightSrc="assets/img/f03_reduzida_r01.jpg"
-      imageRightAlt="right"
-      --handle-size="2.5rem"
-      --slider-color="#ffffff"
-      --slider-width="0.125rem"
-    />
+        imageLeftSrc="assets/img/f03_antes.jpg"
+        imageLeftAlt="left"
+        imageRightSrc="assets/img/f03_reduzida_r01.jpg"
+        imageRightAlt="right"
+        --handle-size="2.5rem"
+        --slider-color="#ffffff"
+        --slider-width="0.125rem"
+      />
+      <button
+        class="absolute bottom-4 right-4 bg-blue-500 text-white p-2 rounded"
+        on:click={toggleFullScreen2}
+      >
+        Full Screen
+      </button>
     </div>
 
-    <div class="border-2 border-black" id="gardena2-triptych">
+    <div class="border-2 border-black" id="gardena2-triptych" bind:this={divElement3}>
       <CompareImage
-      imageLeftSrc="assets/img/f04_antes.jpg"
-      imageLeftAlt="left"
-      imageRightSrc="assets/img/f04_reduzida_r01.jpg"
-      imageRightAlt="right"
-      --handle-size="2.5rem"
-      --slider-color="#ffffff"
-      --slider-width="0.125rem"
-    />
+        imageLeftSrc="assets/img/f04_antes.jpg"
+        imageLeftAlt="left"
+        imageRightSrc="assets/img/f04_reduzida_r01.jpg"
+        imageRightAlt="right"
+        --handle-size="2.5rem"
+        --slider-color="#ffffff"
+        --slider-width="0.125rem"
+      />
+      <button
+        class="absolute bottom-4 right-4 bg-blue-500 text-white p-2 rounded"
+        on:click={toggleFullScreen3}
+      >
+        Full Screen
+      </button>
     </div>
   </div>
 </div>
