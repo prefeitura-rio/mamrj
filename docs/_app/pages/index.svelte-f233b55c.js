@@ -56,6 +56,7 @@ The opportunities afforded me early in my life in Gardena have not continued dec
  Concretagem da estrutura - Cr\xE9dito: Autor Desconhecido 
  Concretagem da estrutura - Cr\xE9dito: Acervo MAM Rio Jardins do Museu de Arte Moderna - Cr\xE9dito: UFF Paisagismo
 Jardins do Museu de Arte Moderna - Cr\xE9dito: UFF Paisagismo
+Placas Solares - Cre\xB4dito: Autor Desconhecido
 Foto a\xE9rea do Museu de Arte Moderna- Cr\xE9dito: UFF Paisagismo
 Repercuss\xE3o Jornal do Brasil. 1978 - Cr\xE9dito: Jornal do Brasil
 Equipe dos Bombeiros atuando no combate ao inc\xEAndio - Cr\xE9dito: Jornal O Globo
