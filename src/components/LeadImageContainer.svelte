@@ -29,7 +29,14 @@
     "madera-ggp":  {
       triggerStep: 1,
       endStep: 2,
-      position: "row-start-1 col-start-2 col-span-5",
+      position: "row-start-1 col-start-1 col-span-6",
+      positionMobile: "row-start-2 col-start-1 col-span-12",
+      altText: "A black and white photo of the author's grandmother and grandfather posing for a picture together in front of an old car. The grandmother is wearing a dress, long coat, glasses, and a bonnet. The grandfather is wearing jeans with a long sleeve button up tucked in."
+    },
+    "cimeira4":  {
+      triggerStep: 1,
+      endStep: 2,
+      position: "row-start-4 col-start-2 col-span-6",
       positionMobile: "row-start-2 col-start-1 col-span-12",
       altText: "A black and white photo of the author's grandmother and grandfather posing for a picture together in front of an old car. The grandmother is wearing a dress, long coat, glasses, and a bonnet. The grandfather is wearing jeans with a long sleeve button up tucked in."
     },
