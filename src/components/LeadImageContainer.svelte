@@ -89,24 +89,17 @@
       positionMobile: "row-start-4 col-start-5 col-span-8",
       altText: "A photo of the author in an elemenary school classroom smiling and holding up a written report in 1999. the author is wearing a navy swish jacket with a navy and white plaid button-up shirt underneath."
     },
-    "cimeira1": {
-      triggerStep: 6,
-      endStep: 7,
-      position: "row-start-1 col-start-2 col-span-5",
-      positionMobile: "row-start-1 col-start-3 col-span-8",
-      altText: "A photo of the author in an elemenary school classroom smiling and holding up a written report in 1999. the author is wearing a navy swish jacket with a navy and white plaid button-up shirt underneath."
-    },
     "cimeira2": {
       triggerStep: 6,
       endStep: 7,
-      position:"row-start-2 col-start-6 col-span-7",
-      positionMobile: "row-start-4 col-start-6 col-span-8",
+      position: "row-start-1 col-start-2 col-span-9",
+      positionMobile: "row-start-1 col-start-3 col-span-8",
       altText: "A photo of the author in an elemenary school classroom smiling and holding up a written report in 1999. the author is wearing a navy swish jacket with a navy and white plaid button-up shirt underneath."
     },
     "cimeira33": {
       triggerStep: 6,
       endStep: 7,
-      position:"row-start-5 col-start-6 col-span-4",
+      position:"row-start-4 col-start-4 col-span-5",
       positionMobile: "row-start-3 col-start-1 col-span-8",
       altText: "A photo of the author in an elemenary school classroom smiling and holding up a written report in 1999. the author is wearing a navy swish jacket with a navy and white plaid button-up shirt underneath."
     }
