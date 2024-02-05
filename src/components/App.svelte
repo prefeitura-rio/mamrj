@@ -196,8 +196,8 @@
           />
         </div>
       
-        <button class="absolute bottom-4 right-4 bg-blue-500 text-white p-2 rounded" on:click={toggleFullScreen}>
-          Full Screen
+        <button class="absolute bottom-4 right-4 text-white p-2 " on:click={toggleFullScreen}>
+          <i class="material-icons">fullscreen</i>
         </button>
       </div>
         <br><br><br>
@@ -262,6 +262,11 @@
 </article>
 
 <style>
+    .material-icons {
+    font-family: "Material Icons";
+    font-size: 30px;
+    vertical-align: middle;
+  }
   .iframe-container iframe {
   position: relative;
   z-index: 9999; /* Ajuste o valor conforme necessário */

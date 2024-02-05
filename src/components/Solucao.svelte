@@ -68,11 +68,8 @@
         --slider-color="#ffffff"
         --slider-width="0.125rem"
       />
-      <button
-        class="absolute bottom-4 right-4 bg-blue-500 text-white p-2 rounded"
-        on:click={toggleFullScreen1}
-      >
-        Full Screen
+      <button class="absolute bottom-4 right-4 text-white p-2 " on:click={toggleFullScreen1}>
+        <i class="material-icons">fullscreen</i>
       </button>
     </div>
 
@@ -86,11 +83,8 @@
         --slider-color="#ffffff"
         --slider-width="0.125rem"
       />
-      <button
-        class="absolute bottom-4 right-4 bg-blue-500 text-white p-2 rounded"
-        on:click={toggleFullScreen2}
-      >
-        Full Screen
+      <button class="absolute bottom-4 right-4 text-white p-2 " on:click={toggleFullScreen2}>
+        <i class="material-icons">fullscreen</i>
       </button>
     </div>
 
@@ -104,17 +98,19 @@
         --slider-color="#ffffff"
         --slider-width="0.125rem"
       />
-      <button
-        class="absolute bottom-4 right-4 bg-blue-500 text-white p-2 rounded"
-        on:click={toggleFullScreen3}
-      >
-        Full Screen
+      <button class="absolute bottom-4 right-4 text-white p-2 " on:click={toggleFullScreen3}>
+        <i class="material-icons">fullscreen</i>
       </button>
     </div>
   </div>
 </div>
 
 <style>
+   .material-icons {
+    font-family: "Material Icons";
+    font-size: 30px;
+    vertical-align: middle;
+  }
   .trip-wrapper {
     height: calc(100vw * 1.25);
     padding: 1rem 1rem 0rem 1rem;
